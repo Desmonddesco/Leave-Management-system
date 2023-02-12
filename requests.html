@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Requests List</title>
+    <link rel="shotrcut icon"  type="x-icon" href="images/skull.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- cusom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chatwithfamers.css">
+   
+    <!-- Latest compiled and minified CSS -->
+    
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="img">
+            <a class="logo">Fordel<span> Technologies </span> </a>
+        </div>
+   
+    </header>
+
+<!-- header section ends -->
+
+<!-- side-bar section starts -->
+
+
+<!-- side-bar section ends -->
+
+<!-- login form section starts  -->
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<div class="container">
+    <h1 class="heading">Leave Requests List</h1>
+<div class="row clearfix">
+    <div class="col-lg-12">
+        <div class="card chat-app">
+            <div id="plist" class="people-list">
+             
+                <div class="users" id="requests">
+                 
+                </div>
+               
+            </div>
+           
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- login form section ends  -->
+
+<!-- footer section starts  -->
+
+
+
+
+<section class="quick-links">
+
+
+    <div class="links">
+        
+        <a href="https://www.linkedin.com/in/desmond-mushiana-11889920b/"> Created by Mr Mushiana Desmond</a>
+      
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- footer section ends -->
+
+
+
+
+<!-- swiper js link      -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script >
+        // Import the functions you need from the SDKs you need
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCYgRPE5Gx6XnOmy-qLScKKVqeiA36mhCU",
+            authDomain: "leave-management-system-606c7.firebaseapp.com",
+            projectId: "leave-management-system-606c7",
+            storageBucket: "leave-management-system-606c7.appspot.com",
+            messagingSenderId: "375811672559",
+            appId: "1:375811672559:web:295212f1761ffdbe484e1a",
+            measurementId: "G-KDRJ10TC07"
+            };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots:true});
+        firebase.analytics();
+      </script>
+
+<!-- custom js file link  -->
+<script src="js/submit_leave.js"></script>
+<script src="js/requests.js"></script>
+
+
+
+</body>
+</html>

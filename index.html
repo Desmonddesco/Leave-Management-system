@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply For Leave</title>
+    <link rel="shotrcut icon"  type="x-icon" href="images/skull.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- cusom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+   
+    <!-- Latest compiled and minified CSS -->
+    
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="img">
+            
+          
+            <a class="logo">Fordel<span> Technologies </span> </a>
+        </div>
+   
+    </header>
+
+<!-- header section ends -->
+
+<!-- side-bar section starts -->
+
+
+<!-- side-bar section ends -->
+
+<!-- login form section starts  -->
+
+<section class="login" >
+    <h1 class="heading"></h1>
+    <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
+    <form action="submitscript.php" target="dummyframe"  id="form">
+        <h3>Apply For Leave</h3>
+        <input type="text" name="" placeholder="Enter your firstname" id="firstname" class="box" required>
+        <input type="text" name="" placeholder="Enter your lastname" id="lastname" class="box" required>
+       
+        <select class="box" id="typeofleave" required>
+            <option value="">Select type of leave</option>
+            <option value="1">Annual leave</option>
+            <option value="2">Sick leave</option>
+            <option value="3">Maternity leave</option>
+            <option value="4">Family responsibility leave </option>
+        </select >
+
+        <input type="text" class="box" id="startdate" placeholder="Enter start date of leave"
+         onfocus="(this.type='date')" required>
+         
+         <input type="text" class="box" id="lastdate" placeholder="Enter last date of leave"
+         onfocus="(this.type='date')" required>
+   
+        <input type="text" name="" placeholder="Enter a reason of your leave" id="reason" class="box" required>
+       
+       
+   
+        <input type="submit" value="Submit Leave" class="btn" onclick="SubmitLeave()">
+        
+        <a href="requests.html" class="btn link">View Requests List</a>
+        
+    </form>
+    <button  id="myBtn" >set dates</button>
+
+</section>
+
+<!-- login form section ends  -->
+
+<!-- footer section starts  -->
+
+
+
+
+<section class="quick-links">
+
+
+    <div class="links">
+        
+        <a href="https://www.linkedin.com/in/desmond-mushiana-11889920b/"> Created by Mr Mushiana Desmond</a>
+      
+    </div>
+
+
+</section>
+
+
+
+
+
+<!-- footer section ends -->
+
+
+
+
+<!-- swiper js link      -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script >
+        // Import the functions you need from the SDKs you need
+      
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCYgRPE5Gx6XnOmy-qLScKKVqeiA36mhCU",
+            authDomain: "leave-management-system-606c7.firebaseapp.com",
+            projectId: "leave-management-system-606c7",
+            storageBucket: "leave-management-system-606c7.appspot.com",
+            messagingSenderId: "375811672559",
+            appId: "1:375811672559:web:295212f1761ffdbe484e1a",
+            measurementId: "G-KDRJ10TC07"
+            };
+      
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots:true});
+        firebase.analytics();
+      </script>
+
+<!-- custom js file link  -->
+<script src="js/submit_leave.js"></script>
+<script src="js/create_events.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+
+
+
+
+
+
+</body>
+</html>
