@@ -9,7 +9,7 @@ I've divided up the business logic JS into a few different files, which makes ma
 
 NOTE: For this challenge I had to learn Google APIs (Calendar specifically), Google OAuth2, Backbone.js, and SASS all mostly from scratch as I have never used any of these so far in my professional projects. So yes, it was a challenge for sure :)
 
-NOTE: I defined the project on the Google Developers Console to expect to be running from http://localhost (Javascript Origins setting), so you may need to rig up your checkout to run from that identical host or you will get authorization failures from Google.
+NOTE: I defined the project on the Google Developers Console to expect to be running from firebase hosting ,  so you may need to rig up your checkout to run from that identical host or you will get authorization failures from Google.
 
 NOTE: I developed/tested with latest Chrome. However is not as nicely supported in browsers such as IE and Firefox, so with more time I would need to add more sanitization of the date input value for those browsers, but I didn't get to it.
 
