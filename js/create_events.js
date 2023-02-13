@@ -76,7 +76,8 @@ function createEvent(eventData) {
     // execute the request and do something with response
     request.execute(function(resp) {
       console.log(resp);
-      alert("Your event was added to the calendar.");
+           console.log("Your event was added to the calendar.");
+
     });
   })
   }
