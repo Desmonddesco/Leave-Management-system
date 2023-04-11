@@ -1,0 +1,26 @@
+To use or nagivate to admin panel, You can click on admin portal navlink on index page,
+- You have to login first as in admin.
+- username to login is admin@gmail.com and password is admin1234
+- if you are not logged in, system will require you to login first.
+- It will nagive to login page.
+- information you provided will be verified using user authentication.
+- You can't use admin panel if you are not verified.
+- You can't register on the system.
+
+Once you're on the Admin panel  you can able to do the manage the following:
+- You can Accept the leave request.
+- You can Decline the leave request.
+- You cana delete the leave request.
+
+on View and Read you can:
+- view the employee names who requested for leave.
+- view the Leave Status.
+- view Days requested.
+- view Type of Leave.
+- Initial day of the leave , along with the last day of the leave
+
+Once you accept the leave request,  Days requested will be subtracted to Available days of leave,
+so you can view Available days of leave left.
+
+When you are doing managing the requests, you can logout and system will nagivate to home page of the system
+ 

@@ -8,7 +8,8 @@ function SubmitLeave(){
     var reason = document.getElementById("reason").value;
     var select = document.getElementById('typeofleave');
     var value = select.options[select.selectedIndex].value;
-    const totalsdaysofleave = 21
+    var totalsdaysofleave = 21;
+    var count = 0;
    if (value==1) {
     select ="Annual leave"
    }
@@ -27,6 +28,8 @@ function SubmitLeave(){
    const date2 = new Date(lastleave);
    const diffTime = Math.abs(date2 - date1);
    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+
+   
   
 
    //adding to database
@@ -38,7 +41,10 @@ function SubmitLeave(){
         Type_Of_Leave:select, 
         Reason_Of_leave:reason,
         Total_Days_Of_leave:totalsdaysofleave,
-        Total_Days_Of_Leave_Taken:diffDays + " Days"
+        Total_Days_Of_Leave_Taken:diffDays,
+        Leave_Status:"Pending", 
+        Count:count
+        //Count:count++
    
   }).then(()=>{
      //Clearing the inputs

@@ -14,9 +14,10 @@ function view_requests(){
         <li class="clearfix">
         <div class="about">
             <div class="name">${element.data().Firstname}
-             ${element.data().Lastname} requested for a ${element.data().Total_Days_Of_Leave_Taken}
+             ${element.data().Lastname} requested for a ${element.data().Total_Days_Of_Leave_Taken} days
              ${element.data().Type_Of_Leave} starting from 
-             ${element.data().First_Day_Of_Leave} until ${element.data().Last_Day_Of_Leave} </div>                                      
+             ${element.data().First_Day_Of_Leave} until ${element.data().Last_Day_Of_Leave} 
+             and Leave status is ${element.data().Leave_Status}</div>                                      
         </div>
      
          </li>           

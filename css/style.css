@@ -171,7 +171,15 @@ section {
           justify-content: space-between;
   padding: 1rem 9%;
 }
-
+.admin{
+  position: relative;
+  text-decoration: none;
+  font-size: 2rem;
+  color: goldenrod;
+  bottom: 5px;
+  font-weight: bolder;
+  float: right;
+}
 .header .logo {
   position: relative;
   text-decoration: none;

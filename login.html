@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apply For Leave</title>
+    <title>Admin Login</title>
     <link rel="shotrcut icon"  type="x-icon" href="images/skull.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -21,20 +21,21 @@
     
 <!-- header section starts  -->
 
-    <header class="header">
+<header class="header">
 
-        <div class="img">
-            
-          
-            <a class="logo" href="admin.html">Fordel<span> Technologies </span> </a>
-         
-        </div>
-        <a class="admin" onclick="ifLoggedIn()">Admin<span> Portal </span> </a>
-    </header>
+    <div class="img">
+        
+      
+        <a class="logo" href="index.html">Fordel<span> Technologies </span> </a>
+     
+    </div>
+
+</header>
 
 <!-- header section ends -->
 
 <!-- side-bar section starts -->
+
 
 
 <!-- side-bar section ends -->
@@ -42,45 +43,27 @@
 <!-- login form section starts  -->
 
 <section class="login" >
-    <h1 class="heading"></h1>
-    <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
-    <form action="submitscript.php" target="dummyframe"  id="form">
-        <h3>Apply For Leave</h3>
-        <input type="text" name="" placeholder="Enter your firstname" id="firstname" class="box" required>
-        <input type="text" name="" placeholder="Enter your lastname" id="lastname" class="box" required>
-       
-        <select class="box" id="typeofleave" required>
-            <option value="">Select type of leave</option>
-            <option value="1">Annual leave</option>
-            <option value="2">Sick leave</option>
-            <option value="3">Maternity leave</option>
-            <option value="4">Family responsibility leave </option>
-        </select >
-
-        <input type="text" class="box" id="startdate" placeholder="Enter start date of leave"
-         onfocus="(this.type='date')" required>
-         
-         <input type="text" class="box" id="lastdate" placeholder="Enter last date of leave"
-         onfocus="(this.type='date')" required>
-   
-        <input type="text" name="" placeholder="Enter a reason of your leave" id="reason" class="box" required>
-       
-       
-   
-        <input type="submit"  id="myBtn" value="Submit Leave" class="btn" onclick="SubmitLeave()">
-
-        <a href="requests.html" class="btn link">View Requests List</a>
+  
+    
+    <form action="">
+        <h3>login now as in admin</h3>
+        <input type="email" name="" placeholder="enter your email" id="email" class="box">
+        <input type="password" name="" placeholder="enter your password" id="password" class="box">
         
+        <div class="remember">
+            <label  ><input type="checkbox" id="rememberMe" value="lsRememberMe"> remember me <br></label>
+            <label for="remember-me" onclick="forgetPassword()"> forget password? </label>
+        </div>
+      
+        <input type="button" value="login now" class="btn" onclick="login()">
+       
     </form>
-
 
 </section>
 
 <!-- login form section ends  -->
 
 <!-- footer section starts  -->
-
-
 
 
 <section class="quick-links">
@@ -98,14 +81,13 @@
 
 
 
-
 <!-- footer section ends -->
 
 
 
 
 <!-- swiper js link      -->
-  
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
@@ -141,15 +123,10 @@
       </script>
 
 <!-- custom js file link  -->
-<script src="js/submit_leave.js"></script>
-<script src="js/create_events.js"></script>
-<script src="js/date.js"></script>
+<script src="js/script.js"></script>
 <script src="js/login.js"></script>
-<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-
-
-
-
+<script src="js/logout.js"></script>
+<script src="js/displayuserdetails.js"></script>
 
 
 </body>
